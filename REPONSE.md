@@ -38,3 +38,11 @@ Q11. Que signifient <<<<<<< HEAD , ======= et >>>>>>> titre ? Dans quel cas Git 
 ==> <<<<<<< HEAD marque le début de ta version (branche courante), ======= sépare les deux versions, et >>>>>>> titre marque la fin de la version de l'autre branche. Git ne peut pas fusionner seul quand les deux branches ont modifié les mêmes lignes.
 
 -Juste pour modifier
+Q12:Que désigne origin? Que fait l'option -u de git push?
+==> origin est le nom par défaut du dépôt distant (GitHub). -u lie la branche locale à la branche distante, donc ensuite git push et git pull suffisent sans arguments
+
+Q13: Quelle différence entre git pull et git fetch?
+==> git fetch télécharge les nouveautés sans toucher à ton travail. git pull = fetch + fusion (merge) dans ta branche courante.
+
+Q14:Pourquoi le git push de l'étape 5.5 a-t-il été refusé ? Quelle est la bonne habitude à prendre avant de pousser ?
+==> Il a été refusé car le distant contenait des commits que tu n'avais pas en local (historiques divergents). Bonne habitude : faire git pull (ou fetch) avant de pousser.
