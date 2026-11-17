@@ -27,3 +27,12 @@ Q7. Quelle différence entre git revert et git reset ? Lequel utiliser sur une b
 
 Q8. Que signifie HEAD~1 ? Que veut dire le message « detached HEAD » vu à l'étape 3.8 ?
 ==> HEAD~1 designe le commit parent de HEAD. « detached HEAD » signifie que HEAD pointe directement sur un commit et non sur une branche .
+
+Q9. Pourquoi la multiplication est-elle absente de Main.java à l'étape 4.2 alors que le fichier est le même ?
+==> Le fichier est le meme mais la multiplication a ete ajoute sur une autre branch donc les modifications ne se verront dans la branch main.
+
+Q10. Qu'est-ce qu'une fusion fast-forward ? Pourquoi la fusion de l'étape 4.4 a-t-elle créé un commit de fusion ?
+==> Fast-forward : la branche cible n'a pas avancé, Git déplace simplement le pointeur, sans nouveau commit. À l'étape 4.4, les deux branches avaient chacune de nouveaux commits (historiques divergents), donc Git a créé un commit de fusion à deux parents.
+
+Q11. Que signifient <<<<<<< HEAD , ======= et >>>>>>> titre ? Dans quel cas Git ne peut-il pas fusionner seul ?
+==> <<<<<<< HEAD marque le début de ta version (branche courante), ======= sépare les deux versions, et >>>>>>> titre marque la fin de la version de l'autre branche. Git ne peut pas fusionner seul quand les deux branches ont modifié les mêmes lignes.
