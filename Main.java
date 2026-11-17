@@ -20,6 +20,7 @@ public class Main {
 		System.out.println("4 x 5 =" + multiplication(4, 5));
 		System.out.println("9 / 3 =" + division(9, 3));
 		System.out.println("8 a la puissance 2 =" + puissance(8, 2));
+		System.out.println("2^-1 = " +puissance(2, -1));
 	}
 }
 
