@@ -36,3 +36,5 @@ Q10. Qu'est-ce qu'une fusion fast-forward ? Pourquoi la fusion de l'étape 4.4 a
 
 Q11. Que signifient <<<<<<< HEAD , ======= et >>>>>>> titre ? Dans quel cas Git ne peut-il pas fusionner seul ?
 ==> <<<<<<< HEAD marque le début de ta version (branche courante), ======= sépare les deux versions, et >>>>>>> titre marque la fin de la version de l'autre branche. Git ne peut pas fusionner seul quand les deux branches ont modifié les mêmes lignes.
+
+-Juste pour modifier
