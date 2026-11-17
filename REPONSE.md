@@ -16,3 +16,14 @@ Q4. Quelle est la différence entre git diff et git diff --staged ?
 
 Q5. Que représente la suite de caractères au début de chaque ligne de git log --oneline ?
 ==> C'est l'identifiant du commit
+
+Q6. Pourquoi ne versionne-t-on pas le fichier compilé Main.class? En quoi .gitignore simplifie-t-il l'usage de git add .?
+==> On ne versionne pas Main.class parecqu'il peu etre recreer par Main.java donc il alourdi le depot et cree des conflits inutiles.
+    .gitignore lit ces fichiers donc git add . ne les ajoute pas.
+
+Q7. Quelle différence entre git revert et git reset ? Lequel utiliser sur une branche déjà partagée sur GitHub, et pourquoi ?
+==> git revert cree un nouveau commit qui annule le commit precedent alors que git reset deplace la branche en arriere et reecrit
+    l'historique.Sur une branche deja partage , on utilise revert pour ne pas casser l'historique des autres.
+
+Q8. Que signifie HEAD~1 ? Que veut dire le message « detached HEAD » vu à l'étape 3.8 ?
+==> HEAD~1 designe le commit parent de HEAD. « detached HEAD » signifie que HEAD pointe directement sur un commit et non sur une branche .
